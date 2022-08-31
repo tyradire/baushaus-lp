@@ -1,0 +1,83 @@
+@import url('../../variables.css');
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header__nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 160px;
+  height: 80px;
+}
+
+.header__links {
+  list-style: none;
+  display: flex;
+}
+
+.header__link {
+  font-size: 1.1em;
+  line-height: 1.1em;
+  font-weight: 600;
+  margin-left: 30px; 
+  
+}
+
+.header__link a {
+  transition: .2s;
+  color: var(--brand-main);
+  text-decoration: none;
+}
+
+.header__link a:hover {
+  color: var(--brand-accent);
+}
+
+.header__contacts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__phone {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.contacts__phone a {
+  color: var(--brand-main);
+  text-decoration: none;
+}
+
+.phone__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.phone__wrapper p {
+  margin: 2px 0;
+}
+
+.phone__wrapper:hover,
+.phone__wrapper svg:hover path {
+  color: var(--brand-accent);
+  fill: var(--brand-accent);
+}

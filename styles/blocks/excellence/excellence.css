@@ -1,0 +1,44 @@
+@import url('../../variables.css');
+
+.excellence {
+  background-color: var(--brand-main);
+  background: repeating-linear-gradient(180deg, var(--brand-secondary), var(--brand-secondary) 800px, var(--brand-main) 800px, var(--brand-main) 1600px);
+}
+
+.excellence__subtitle {
+  padding: 40px;
+  text-align: center;
+  margin: 0;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+}
+
+.excellence__cover {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.excellence__image {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  height: auto;
+}
+
+.excellence__paragraph {
+  margin: 40px auto;
+  padding: 2em;
+  text-indent: 1em;
+  text-align: left;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255);
+}

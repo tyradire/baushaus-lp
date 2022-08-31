@@ -1,0 +1,7 @@
+body {
+  --brand-main: hsl(0, 0%, 0%);
+  --brand-secondary: hsl(0, 0%, 100%);
+  --brand-accent: hsl(1, 88%, 38%);
+  --shadow: hsl(0, 0%, 70%);
+  --brand-main-cover: hsla(0, 0%, 0%, 0.5);
+}
