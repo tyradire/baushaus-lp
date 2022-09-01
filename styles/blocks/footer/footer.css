@@ -1,0 +1,41 @@
+@import url('../../variables.css');
+
+.footer {
+  position: relative;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-main);
+}
+
+.footer__container {
+  width: 640px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__location {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer__image {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__info {
+  position: absolute;
+  bottom: 34px;
+  right: 50px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #fff;
+}
