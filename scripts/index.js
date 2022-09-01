@@ -132,17 +132,17 @@ function scrollFunction() {
 
 const leftSingleSwap = () => {
   if (swipe === 0) {
-    return
+    swipe = 11
   } else {
     swipe = swipe - 1;
-    sliderDescription.textContent = slides[swipe].description;
-    sliderImage.src = slides[swipe].image;
   }
+  sliderDescription.textContent = slides[swipe].description;
+  sliderImage.src = slides[swipe].image;
 }
 
 const rightSingleSwap = () => {
   if (swipe === 11) {
-    swipe = 1
+    swipe = 0
   } else {
     swipe = swipe + 1;
   }
