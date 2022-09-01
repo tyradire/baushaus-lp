@@ -6,12 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./vendor/normalize.css">
-  <title>Новые фасады Астрон</title>
+  <title>Акция на шкафы для одежды</title>
 </head>
 <body>
   <header class="header">
     <nav class="header__nav">
       <img src="./images/logo.png" class="header__logo"/>
+      <div class="burger-menu">
+        <div class="burger-menu__button" id="burger-button">
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+        </div>
+        <div class="burger-menu__opened" id="burger-menu">
+          <ul class="burger-menu__links">
+            <li class="burger-menu__link"><a href="#excellence-block">Почему Infinity?</a></li>
+            <li class="burger-menu__link"><a href="#design">Дизайн</a></li>
+            <li class="burger-menu__link"><a href="#">Функциональность</a></li>
+          </ul>
+        </div>
+      </div>
       <ul class="header__links">
         <li class="header__link"><a href="#excellence-block">Почему Infinity?</a></li>
         <li class="header__link"><a href="#design">Дизайн</a></li>
@@ -171,10 +185,10 @@
         </div>
         <div class="form__text-side">
           <textarea class="form__text" placeholder="Ваш комментарий"></textarea>
-          <!-- <div class="form__checkbox-label">
-            <label for="checkbox" >Согласие на предоставление салону мебели BAUSHAUS своих персональных данных</label>
+          <div class="form__checkbox-label">
             <input type="checkbox" id="checkbox" class="form__checkbox">
-          </div> -->
+            <label for="checkbox" >Согласие на предоставление салону мебели BAUSHAUS своих персональных данных</label>
+          </div>
           <input type="submit" class="form__submit">
         </div>
       </form>

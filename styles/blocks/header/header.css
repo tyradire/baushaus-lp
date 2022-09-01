@@ -2,6 +2,9 @@
 
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,8 +14,8 @@
 }
 
 .header__nav {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,6 +32,7 @@
 .header__links {
   list-style: none;
   display: flex;
+  padding-left: 0;
 }
 
 .header__link {
@@ -54,6 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 0;
 }
 
 .contacts__phone {
@@ -80,4 +85,63 @@
 .phone__wrapper svg:hover path {
   color: var(--brand-accent);
   fill: var(--brand-accent);
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    height: 70px;
+  }
+  .header__nav {
+    margin: 0 140px;
+  }
+  .header__logo {
+    width: 140px;
+    height: 70px;
+  }
+  .header__link {
+    font-size: 1em;
+    line-height: 1em;
+    margin-left: 60px; 
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .header__nav {
+    margin: 0 60px;
+  }
+  .header__link {
+    font-size: .9em;
+    line-height: .9em;
+    margin-left: 40px; 
+  }
+  .contacts__phone {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .contacts__locality {
+    font-size: .8em;
+    line-height: .8em;
+  }
+  .header__contacts {
+    margin-left: 10px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .header__nav {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__contacts {
+    display: none;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__nav {
+    margin: 0 30px;
+  }
 }

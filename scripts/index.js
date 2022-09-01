@@ -34,6 +34,17 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const sliderContainer = document.querySelector('.slider-wrapper');
 
+const burgerMenu = document.getElementById('burger-menu');
+const burgerButton = document.getElementById('burger-button');
+const burgerLines = document.querySelectorAll('.burger-menu__line')
+
+const openBurgerMenu = () => {
+  burgerMenu.classList.toggle('burger-menu__opened_open');
+  burgerLines.forEach(elem => elem.classList.toggle('burger-menu__cross'));
+}
+
+burgerButton.addEventListener('click', openBurgerMenu);
+
 let slide = 0;
 
 const slideLeft = () => {

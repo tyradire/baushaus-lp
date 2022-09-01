@@ -98,12 +98,6 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .promo {
-    background-size: contain;
-  }
-}
-
 @media screen and (max-width: 1440px) {
   .promo__offer {
     width: 560px;

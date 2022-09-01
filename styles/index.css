@@ -3,11 +3,14 @@
 @import url('./blocks/promo/promo.css');
 @import url('./blocks/excellence/excellence.css');
 @import url('./blocks/pros/pros.css');
-@import url('./ui/want-to-buy.css');
 @import url('./blocks/design/design.css');
 @import url('./blocks/slider/slider.css');
 @import url('./blocks/functionality/functionality.css');
 @import url('./blocks/form-wrapper/form-wrapper.css');
+
+@import url('./ui/burger-menu.css');
+@import url('./ui/want-to-buy.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 body {
