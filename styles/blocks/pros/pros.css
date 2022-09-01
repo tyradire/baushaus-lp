@@ -22,7 +22,7 @@
   height: 120px;
   padding-top: 60px;
   padding: 3em;
-  background-color: black;
+  background-color: var(--brand-main);
   border-radius: 14px;
   display: flex;
   justify-content: space-between;

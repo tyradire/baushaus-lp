@@ -79,27 +79,65 @@
 @keyframes animationProductName {
   from {
     opacity: 0;
-    left: 0px;
+    margin-left: -200px;
   }
   to {
     opacity: 1;
-    left: calc(50% - 145px);
+    margin-left: 0;
   }
 }
 
 @keyframes animationSale {
   from {
     opacity: 0;
-    right: 0;
+    margin-right: -200px;
   }
   to {
     opacity: 1;
-    right: calc(50% - 201px);
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .promo {
     background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .promo__offer {
+    width: 560px;
+    height: 372px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, .15);
+    /* box-shadow: 0px 0px 40px #4f4f4f; */
+    animation: animationOpacity 1s;
+  }
+  .promo__title {
+    font-size: 2em;
+  }
+  .promo__product-name {
+    left: calc(50% - 130px);
+    font-size: 70px;
+    line-height: 70px;
+    animation: animationProductName 1.5s;
+  }
+  .promo__sale {
+    right: calc(50% - 240px);
+    font-size: 2.5em;
+    line-height: .5em;
+    animation: animationSale 1.5s;
+  }
+  @keyframes animationOpacity {
+    from {
+      opacity: 0;
+      width: 900px;
+      height: 600px;
+    }
+    to {
+      opacity: 1;
+      width: 560px;
+      height: 372px;
+    }
   }
 }

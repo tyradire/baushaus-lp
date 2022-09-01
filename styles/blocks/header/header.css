@@ -35,8 +35,8 @@
   font-size: 1.1em;
   line-height: 1.1em;
   font-weight: 600;
-  margin-left: 30px; 
-  
+  margin-left: 60px; 
+  text-transform: uppercase;
 }
 
 .header__link a {

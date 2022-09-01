@@ -13,7 +13,7 @@
     <nav class="header__nav">
       <img src="./images/logo.png" class="header__logo"/>
       <ul class="header__links">
-        <li class="header__link"><a href="#excellence-block">Почему Инфинити?</a></li>
+        <li class="header__link"><a href="#excellence-block">Почему Infinity?</a></li>
         <li class="header__link"><a href="#design">Дизайн</a></li>
         <li class="header__link"><a href="#">Функциональность</a></li>
       </ul>
@@ -115,7 +115,7 @@
           </div>
         </div>
       </div>
-      <button class="want-to-buy">Хочу купить</button>
+      <a class="want-to-buy" href="#feedback">Хочу купить</a>
     </section>
     <section class="design" id="design">
       <h2 class="excellence__subtitle">ШКАФ — БОЛЬШЕ, ЧЕМ МЕСТО ХРАНЕНИЯ ВЕЩЕЙ</h2>
@@ -146,7 +146,7 @@
           </svg>
         </div>
       </div>
-      <button class="want-to-buy">Хочу купить</button>
+      <a class="want-to-buy" href="#feedback">Хочу купить</a>
     </section>
     <section class="functionality">
       <h2 class="excellence__subtitle">ИДЕАЛЬНЫЙ ПОРЯДОК</h2>
@@ -156,7 +156,30 @@
           Разнообразное внутреннее наполнение создаёт организованное пространство для хранения вещей.
         </p>
       </div>
+      <a class="want-to-buy" href="#feedback">Хочу купить</a>
     </section>
+    <div class="form-wrapper" id="feedback">
+      <h2 class="form-wrapper__subtitle">заполните форму - мы вам ответим</h2>
+      <form class="form">
+        <div class="form__input-side">
+          <label for="name" class="form__label">Имя*</label>
+          <input type="text" class="form__input" id="name" placeholder="Ваше имя">
+          <label for="email" class="form__label">E-mail*</label>
+          <input type="email" class="form__input" id="email" placeholder="Ваш e-mail">
+          <label for="phone" class="form__label">Телефон*</label>
+          <input type="tel" maxlength="16" class="form__input" id="phone" placeholder="Ваш номер телефона">
+        </div>
+        <div class="form__text-side">
+          <textarea class="form__text" placeholder="Ваш комментарий"></textarea>
+          <!-- <div class="form__checkbox-label">
+            <label for="checkbox" >Согласие на предоставление салону мебели BAUSHAUS своих персональных данных</label>
+            <input type="checkbox" id="checkbox" class="form__checkbox">
+          </div> -->
+          <input type="submit" class="form__submit">
+        </div>
+      </form>
+    </div>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a7632a3ac9377dfa2a7b3c7ccdb01587802c9914da39486a7e3886978dd786b&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
   </div>
   <script src="./scripts/index.js"></script>
 </body>

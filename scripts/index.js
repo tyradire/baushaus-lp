@@ -37,13 +37,19 @@ const sliderContainer = document.querySelector('.slider-wrapper');
 let slide = 0;
 
 const slideLeft = () => {
-  if (slide === 0) {
-    leftBtn.classList.add('slider-button_disabled');
-    return
-  } else {
-    slide = slide + 820;
-  }
+  // if (slide = slide + 820;) {
+  //   leftBtn.classList.add('slider-button_disabled');
+  //   return
+  // } else {
+  //   slide = slide + 820;
+  // }
+  console.log(slide)
+  slide + 820 === 0 && leftBtn.classList.add('slider-button_disabled');
+  if ( slide === 0 ) return;
+  slide = slide + 820;
+  //if ( slide === 0 ) { leftBtn.classList.add('slider-button_disabled');  }
   sliderContainer.style.transform = `translateX(${slide}px)`;
+  
 }
 
 const slideRight = () => {
@@ -54,6 +60,7 @@ const slideRight = () => {
     leftBtn.classList.remove('slider-button_disabled');
   }
   sliderContainer.style.transform = `translateX(${slide}px)`;
+  console.log(slide)
 }
 
 leftBtn.addEventListener('click', slideLeft);
