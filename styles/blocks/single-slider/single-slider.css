@@ -12,17 +12,6 @@
   justify-content: center;
 }
 
-/* .single-slider__cover {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transition: .5s;
-  opacity: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-} */
-
 .single-slider__image {
   cursor: pointer;
   height: 100%;
@@ -51,4 +40,11 @@
   color: #c1c1c1;
   background-color: #292929;
   border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1024px) {
+  .single-slider__container {
+    width: 640px;
+    height: 420px;
+  }
 }

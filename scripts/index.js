@@ -76,8 +76,6 @@ const sliderImage = singleSlider.querySelector('.single-slider__image');
 const singleLeft = document.getElementById('single-left');
 const singleRight = document.getElementById('single-right');
 
-console.log(sliderDescription.textContent)
-
 const openBurgerMenu = () => {
   burgerMenu.classList.toggle('burger-menu__opened_open');
   burgerLines.forEach(elem => elem.classList.toggle('burger-menu__cross'));
@@ -87,32 +85,26 @@ burgerButton.addEventListener('click', openBurgerMenu);
 
 let slide = 0;
 let swipe = 0;
+let screenWidth = document.documentElement.clientWidth;
+let stepSlide = screenWidth > 1024 ? 820 : 620;
+let sliderWidth = screenWidth > 1024 ? -4000 : -3500;
+
 
 const slideLeft = () => {
-  // if (slide = slide + 820;) {
-  //   leftBtn.classList.add('slider-button_disabled');
-  //   return
-  // } else {
-  //   slide = slide + 820;
-  // }
-  console.log(slide)
-  slide + 820 === 0 && leftBtn.classList.add('slider-button_disabled');
+  slide + stepSlide === 0 && leftBtn.classList.add('slider-button_disabled');
   if ( slide === 0 ) return;
-  slide = slide + 820;
-  //if ( slide === 0 ) { leftBtn.classList.add('slider-button_disabled');  }
+  slide = slide + stepSlide;
   sliderContainer.style.transform = `translateX(${slide}px)`;
-  
 }
 
 const slideRight = () => {
-  if (slide < -4000) {
+  if (slide < sliderWidth) {
     slide = 0;
   } else {
-    slide = slide - 820;
+    slide = slide - stepSlide;
     leftBtn.classList.remove('slider-button_disabled');
   }
   sliderContainer.style.transform = `translateX(${slide}px)`;
-  console.log(slide)
 }
 
 leftBtn.addEventListener('click', slideLeft);
@@ -152,3 +144,10 @@ const rightSingleSwap = () => {
 
 singleLeft.addEventListener('click', leftSingleSwap);
 singleRight.addEventListener('click', rightSingleSwap);
+
+const setScreenWidth = () => {
+  screenWidth = document.documentElement.clientWidth;
+  console.log(screenWidth)
+}
+
+window.addEventListener('resize', setScreenWidth);
