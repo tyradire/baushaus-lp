@@ -35,3 +35,15 @@
 .unit__image {
   width: 48%;
 }
+
+@media screen and (max-width: 500px) {
+  .functionality__paragraph {
+    margin: 0 auto;
+    padding: 20px 14px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
+  }
+}

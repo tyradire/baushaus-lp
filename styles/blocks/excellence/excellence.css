@@ -48,7 +48,7 @@
     font-size: 44px;
     line-height: 44px;
   }
-};
+}
 
 @media screen and (max-width: 1024px) {
   .excellence__paragraph {
@@ -57,4 +57,17 @@
     font-size: 22px;
     line-height: 30px;
   }
-};
+}
+
+@media screen and (max-width: 500px) {
+  .excellence__subtitle {
+    padding: 40px 18px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .excellence__paragraph {
+    padding: 1em;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

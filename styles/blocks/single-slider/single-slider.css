@@ -48,3 +48,25 @@
     height: 420px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .single-slider {
+    width: 100%;
+  }
+  .single-slider__container {
+    width: 100%;
+    height: 235px;
+  }
+  .single-slider__description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #4d4d4d;
+  }
+  .single-slider__button {
+    position: absolute;
+    z-index: 100;
+  }
+  .single-slider__button:last-of-type {
+    right: 0;
+  }
+}
