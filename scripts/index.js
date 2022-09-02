@@ -86,9 +86,19 @@ burgerButton.addEventListener('click', openBurgerMenu);
 let slide = 0;
 let swipe = 0;
 let screenWidth = document.documentElement.clientWidth;
-let stepSlide = screenWidth > 1024 ? 820 : 620;
-let sliderWidth = screenWidth > 1024 ? -4000 : -3500;
-
+let stepSlide;
+let sliderWidth;
+// 7
+if (screenWidth < 500) {
+  stepSlide = screenWidth;
+  sliderWidth = -screenWidth * 5;
+} else if (screenWidth < 1025) {
+  stepSlide = 620;
+  sliderWidth = -3500;
+} else {
+  stepSlide = 820;
+  sliderWidth = -4000;
+}
 
 const slideLeft = () => {
   slide + stepSlide === 0 && leftBtn.classList.add('slider-button_disabled');
@@ -145,8 +155,8 @@ const rightSingleSwap = () => {
 singleLeft.addEventListener('click', leftSingleSwap);
 singleRight.addEventListener('click', rightSingleSwap);
 
-const setScreenWidth = () => {
-  screenWidth = document.documentElement.clientWidth;
-}
+// const setScreenWidth = () => {
+//   screenWidth = document.documentElement.clientWidth;
+// }
 
-window.addEventListener('resize', setScreenWidth);
+// window.addEventListener('resize', setScreenWidth);
