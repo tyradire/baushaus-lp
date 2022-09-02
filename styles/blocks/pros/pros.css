@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 500px) {
   .pros__items {
-    width: 100%;
+    width: 300px;
     gap: 20px 0;
     grid-template-columns: repeat(1, 310px);
   }

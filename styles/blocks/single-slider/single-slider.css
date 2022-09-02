@@ -55,11 +55,12 @@
   }
   .single-slider__container {
     width: 100%;
-    height: 235px;
+    height: 205px;
   }
   .single-slider__description {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
+    font-weight: 400;
     color: #4d4d4d;
   }
   .single-slider__button {
