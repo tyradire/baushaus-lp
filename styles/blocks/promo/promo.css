@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .promo__offer {
     padding-top: 20px;
     width: 100%;

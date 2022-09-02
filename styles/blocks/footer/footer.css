@@ -50,6 +50,7 @@
     margin-left: 20px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .footer__image {
     width: 24px;
@@ -61,5 +62,24 @@
   }
   .footer__info {
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    justify-content: space-between;
+  }
+  .footer__image {
+    margin-left: 10px;
+  }
+  .footer__location {
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .footer__info {
+    text-align: center;
+    width: 160px;
+    margin-right: 4px;
   }
 }

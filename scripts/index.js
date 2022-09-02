@@ -91,7 +91,10 @@ let sliderWidth;
 // 7
 if (screenWidth < 500) {
   stepSlide = screenWidth;
-  sliderWidth = -screenWidth * 5;
+  sliderWidth = -screenWidth * 6;
+} else if (screenWidth < 768) {
+  stepSlide = 460;
+  sliderWidth = -3500;
 } else if (screenWidth < 1025) {
   stepSlide = 620;
   sliderWidth = -3500;
@@ -108,8 +111,9 @@ const slideLeft = () => {
 }
 
 const slideRight = () => {
-  if (slide < sliderWidth) {
+  if (slide <= sliderWidth) {
     slide = 0;
+    leftBtn.classList.add('slider-button_disabled');
   } else {
     slide = slide - stepSlide;
     leftBtn.classList.remove('slider-button_disabled');
