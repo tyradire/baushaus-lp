@@ -40,11 +40,6 @@ const slides = [
     description: 'Выдвижные корзины для белья или обуви',
   },
   {
-    id: 9,
-    image: './images/image17.jpg',
-    description: 'Секции для рубашек',
-  },
-  {
     id: 10,
     image: './images/image18.jpg',
     description: 'Блоки внутренних ящиков',
@@ -138,7 +133,7 @@ function scrollFunction() {
 
 const leftSingleSwap = () => {
   if (swipe === 0) {
-    swipe = 11
+    swipe = 10
   } else {
     swipe = swipe - 1;
   }
@@ -147,7 +142,7 @@ const leftSingleSwap = () => {
 }
 
 const rightSingleSwap = () => {
-  if (swipe === 11) {
+  if (swipe === 10) {
     swipe = 0
   } else {
     swipe = swipe + 1;
