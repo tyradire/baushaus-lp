@@ -158,9 +158,3 @@ const rightSingleSwap = () => {
 
 singleLeft.addEventListener('click', leftSingleSwap);
 singleRight.addEventListener('click', rightSingleSwap);
-
-// const setScreenWidth = () => {
-//   screenWidth = document.documentElement.clientWidth;
-// }
-
-// window.addEventListener('resize', setScreenWidth);
