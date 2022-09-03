@@ -30,7 +30,7 @@
       <ul class="header__links">
         <li class="header__link"><a href="#excellence-block">Почему Infinity?</a></li>
         <li class="header__link"><a href="#design">Дизайн</a></li>
-        <li class="header__link"><a href="#">Функциональность</a></li>
+        <li class="header__link"><a href="#functionality">Функциональность</a></li>
       </ul>
       <ul class="header__contacts">
         <li class="contacts__phone">
@@ -147,14 +147,84 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303L7.46967 12.5303C7.17678 12.2374 7.17678 11.7626 7.46967 11.4697L13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967C14.8232 5.76256 14.8232 6.23744 14.5303 6.53033L9.06066 12L14.5303 17.4697C14.8232 17.7626 14.8232 18.2374 14.5303 18.5303Z" fill="#030D45"/>
           </svg>
         </div>
-        <div class="slider-wrapper"> 
-          <img src="./images/image2.jpg" class="slider-image" />
-          <img src="./images/image3.jpg" class="slider-image" />
-          <img src="./images/image4.jpg" class="slider-image" />
-          <img src="./images/image5.jpg" class="slider-image" />
-          <img src="./images/image6.jpg" class="slider-image" />
-          <img src="./images/image7.jpg" class="slider-image" />
-          <img src="./images/image8.jpg" class="slider-image" />
+        <div class="slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image2.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image3.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image4.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image5.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image6.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image7.jpg" class="slider__image" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__cover">
+              <p class="slider__title">Infinity</p>
+              <div class="slider__price-tag">
+                <p class="slider__price">80 000 руб.</p>
+                <p class="slider__discount">100 000 руб.</p>
+              </div>
+              <a class="slider__button" href="#feedback">Оставить заявку</a>
+            </div>
+            <img src="./images/image8.jpg" class="slider__image" />
+          </div>
         </div>
         <div class="slider-button__right" id="right"><svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303L7.46967 12.5303C7.17678 12.2374 7.17678 11.7626 7.46967 11.4697L13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967C14.8232 5.76256 14.8232 6.23744 14.5303 6.53033L9.06066 12L14.5303 17.4697C14.8232 17.7626 14.8232 18.2374 14.5303 18.5303Z" fill="#030D45"/>
@@ -189,16 +259,16 @@
       <form class="form" method="POST" id="feedback-form">
         <div class="form__input-side">
           <label for="name" class="form__label">Имя*</label>
-          <input type="text" class="form__input" id="name" name="namecl" placeholder="Ваше имя">
+          <input type="text" class="form__input" id="name" name="namecl" placeholder="Ваше имя" required="true">
           <label for="email" class="form__label">E-mail*</label>
-          <input type="email" class="form__input" id="email" name="emailcl" placeholder="Ваш e-mail">
+          <input type="email" class="form__input" id="email" name="emailcl" placeholder="Ваш e-mail" required="true">
           <label for="phone" class="form__label">Телефон*</label>
-          <input type="tel" maxlength="16" class="form__input" id="phone" name="phonecl" placeholder="Ваш номер телефона">
+          <input type="tel" maxlength="16" class="form__input" id="phone" name="phonecl" placeholder="Ваш номер телефона" required="true">
         </div>
         <div class="form__text-side">
           <textarea class="form__text" placeholder="Ваш комментарий" id="text" name="textcl"></textarea>
           <div class="form__checkbox-label">
-            <input type="checkbox" id="checkbox" class="form__checkbox">
+            <input type="checkbox" id="checkbox" class="form__checkbox" required="true">
             <label for="checkbox" >Согласие на предоставление салону мебели BAUSHAUS своих <a class="form__privacy" target="_blank" href="https://baushaus.ru/wp-content/uploads/2018/12/politika_konfidencialnosti.pdf">персональных данных</a></label>
           </div>
           <input type="submit" class="form__submit" id="form-submit">

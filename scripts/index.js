@@ -59,7 +59,7 @@ const slides = [
 const header = document.querySelector('.header');
 const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
-const sliderContainer = document.querySelector('.slider-wrapper');
+const sliderContainer = document.querySelector('.slider__container');
 
 const burgerMenu = document.getElementById('burger-menu');
 const burgerButton = document.getElementById('burger-button');
@@ -88,8 +88,8 @@ if (screenWidth < 500) {
   stepSlide = screenWidth;
   sliderWidth = -screenWidth * 6;
 } else if (screenWidth < 768) {
-  stepSlide = 460;
-  sliderWidth = -3500;
+  stepSlide = 480;
+  sliderWidth = -2500;
 } else if (screenWidth < 1025) {
   stepSlide = 620;
   sliderWidth = -3500;

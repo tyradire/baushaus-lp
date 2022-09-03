@@ -1,6 +1,6 @@
 <?
 if (array_key_exists('emailcl', $_POST)) {
-     $to = 'poe.tyradire@yandex.ru';
+     $to = 'baushaus@baushaus.ru';
    $subject = 'Заявка с '.$_SERVER['HTTP_REFERER'];
    $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
    $message = "Имя: ".$_POST['namecl']."\r\n";
