@@ -258,12 +258,12 @@
       <h2 class="form-wrapper__subtitle">заполните форму - мы вам ответим</h2>
       <form class="form" method="POST" id="feedback-form">
         <div class="form__input-side">
-          <label for="name" class="form__label">Имя*</label>
+          <label for="name" minlength="3" maxlength="40" class="form__label">Имя*</label>
           <input type="text" class="form__input" id="name" name="namecl" placeholder="Ваше имя" required="true">
           <label for="email" class="form__label">E-mail*</label>
           <input type="email" class="form__input" id="email" name="emailcl" placeholder="Ваш e-mail" required="true">
           <label for="phone" class="form__label">Телефон*</label>
-          <input type="tel" maxlength="16" class="form__input" id="phone" name="phonecl" placeholder="Ваш номер телефона" required="true">
+          <input type="tel" maxlength="18" class="form__input" data-tel-input id="phone" name="phonecl" placeholder="Ваш номер телефона" required="true">
         </div>
         <div class="form__text-side">
           <textarea class="form__text" placeholder="Ваш комментарий" id="text" name="textcl"></textarea>
@@ -291,5 +291,6 @@
   </footer>
   <script src="./scripts/index.js"></script>
   <script src="./scripts/feedback.js"></script>
+  <script src="./scripts/validate.js"></script>
 </body>
 </html>
