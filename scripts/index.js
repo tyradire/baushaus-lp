@@ -93,6 +93,9 @@ if (screenWidth < 500) {
 } else if (screenWidth < 1025) {
   stepSlide = 620;
   sliderWidth = -3500;
+} else if (screenWidth < 1600) {
+  stepSlide = 820;
+  sliderWidth = -4200;
 } else {
   stepSlide = 820;
   sliderWidth = -4000;
