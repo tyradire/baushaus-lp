@@ -50,6 +50,10 @@
   color: #3d3e43;
 }
 
+.slider__finishing {
+  margin: 6px 0 0 100px;
+}
+
 .slider__price-tag {
   display: flex;
   align-items: flex-end;
