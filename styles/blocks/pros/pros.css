@@ -11,7 +11,7 @@
 
 .pros__items {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   display: grid;
   gap: 40px 60px;
   grid-template-columns: repeat(2, 536px);
@@ -62,10 +62,15 @@
   color: white;
 }
 
+.pros__video {
+  width: 640px;
+  height: 640px;
+}
+
 @media screen and (max-width: 1240px) {
   .pros__items {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 400px);
@@ -82,12 +87,16 @@
     width: 100%;
     padding-bottom: 60px;
   }
+  .pros__video {
+    width: 420px;
+    height: 420px;
+  }
 }
 
 @media screen and (max-width: 905px) {
   .pros__items {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 500px);
@@ -135,6 +144,10 @@
     font-size: 16px;
     line-height: 16px;
     color: white;
+  }
+  .pros__video {
+    width: 300px;
+    height: 300px;
   }
 }
 
